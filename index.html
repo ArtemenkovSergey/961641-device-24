@@ -4,9 +4,126 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main header">
+      <h1 class="main-header-logo">Device</h1><!--не заглядывая в фотошоп не понятно заголовок или ссылка-->
+          <nav class="main navigation">
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="user-navigation">
+          <li>
+            <form>
+              <p><input type="search" name="q" placeholder="Поиск по сайту">
+              <input type="submit" value="иконка лупа?"></p>
+            </form>
+          </li>
+          <li><a class="Login-link" href="login-html">Вход-Выход</a></li>
+          <li><a href="compare">Сравнить</a></li>
+          <li><a href="shopping cart">Корзина</a></li>
+        </ul>
+        <ul class="site-navigation">
+          <li><a href="product catalog">каталог товаров</a></li>
+          <li><a href="delivery">доставка</a></li>
+          <li><a href="guarantee">гарантия</a></li>
+          <li><a href="contact">контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    </header>
 
-  </body>
-</html>
+  <main class="container">
+    <p style="text-align: center"><button>ПОДРОБНЕЕ</button> <!--прописать изменение фона кнопки при наведении !-->
+    <div class="slider">
+	    <input type="radio" name="point" id="slide1" checked>
+	    <input type="radio" name="point" id="slide2">
+	    <input type="radio" name="point" id="slide3">
+      <div class="slider">
+		    <div class="slides slide1"></div>
+		    <div class="slides slide2"></div>
+	    	<div class="slides slide3"></div>
+    </div>
+      <div class="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+   </div>
+    <!--описание слайдеров + не забыть замена фона на <nav> с цыфрой страницы при выборе каждого слайдера
+    <section class="selfie">
+      <img src="" alt="" class="left">
+      <h2>Делай селфи, как Бен Сттилер!</h2>
+      <p>Самая длинная палка для селфи доступна в нашеи магазине.</p>
+      <p>Восемь(Восемь,Карл!) метров длиной и весом 5 килограмм.</p>
+      <a href="detailed">ПОДРОБНЕЕ</a> !-->
+      <section class="device">
+        <ul>
+          <li><a href="virtual reality">вертуальная реальность</a></li>
+          <li><a href="monopod">моноподы для селфи</a></li>
+          <li><a href="action camera">моноподы для селфи</a></li>
+          <li><a href="fitness bracelet">фитнесс браслет</a></li>
+          <li><a href="Smartwatch">умные часы</a></li>
+          <li><a href="quadcopter">квадрокоптеры</a></li>
+        </ul>
+      </section>
+      <section class="obligation">
+      <button>ДОСТАВКА</button>
+      <button>ГАРАНТИЯ</button>
+      <button>КРЕДИТ</button>
+      </section>
+    <div class="sponsor"></div>
+    <article class="about us">
+        <section class="profile">
+          <h2>о нас</h2>
+          <p>Огромный выбор гаджетов неоставит равнодушным гика,</p>
+          <p>который есть в каждом из нас.</p>
+          <br>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки</p>
+          <p>России.DEVISE работает со многими транспортными компаниями</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <p><a href="">ПОДРОБНЕЕ О НАС</a></p>
+        </section>
+        <section class="contact">
+          <h2>КОНТАКТЫ</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете</p>
+          <p>проверить работоспособность покупки.   всякое бывает</p>
+          <img src="map google" alt="">
+          <p><a href="">НАПИШИТЕ НАМ</a></p>
+        </section>
+      </article>
+    </main>
+    <footer class="main footer">
+      <h1 class="main-footer-logo">Device</h1>
+      <p class="footer contact">
+        <address>г.Москва, ул. Строителей, 15</address>
+      </p>
+        <ul>
+          <li><a class="Login-link" href="login-html">Вход-Выход</a></li>
+          <li><a href="compare">Сравнить</a></li>
+          <li><a href="shopping cart">Корзина</a></li>
+       </ul>
+       <ul class="footer-navigation">
+         <li><a href="delivery">доставка</a></li>
+         <li><a href="guarantee">гарантия</a></li>
+         <li><a href="contact">контакты</a></li>
+       </ul>
+       <p>Тел.: +7(495)495-95-95</p>
+       <div class="footer-social">
+         <ul>
+           <li><a class="social-button" href="#">Фейсбук</a></li>
+           <li><a class="social-button" href="#">Инстаграм</a></li>
+           <li><a class="social-button" href="#">Телеграм</a></li>
+         </ul>
+       </div>
+       <p class="footer-copyright">
+         <a href="https://htmlacademy.ru">HTML Academy</a>
+       </p>
+     </footer>
+   </body>
+ </html>
