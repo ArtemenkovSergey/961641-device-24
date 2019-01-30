@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <div class="main-navigation-wrapper">
+         <div class="search-item">
+          <form>
+            <p><input type="search" name="q" placeholder="Поиск по сайту" autofocus>
+            <button type="submit" value=""></button></p>
+<!-- И кнопкой отправки формы является не иконка, а кнопка, которая появляется при фокусе на инпуте. Эту кнопку моэжно найти в стайлгайде.
+Иконка лупы это просто декоративная иконка.  -->
+          </form>
+        </div>
+        <div class="user">
+          <ul class="user-comparison">
+<!-- Есть смысл для "Войти" и "сравнить, корзина" сделать разные списки, так как эти ссылки имеют разную смысловую принадлежность.
+А форму поиска вовсе вынести из списка -->
+            <li><a href="compare.html">Сравнить</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a class="login-link" href="login-html">Вход</a></li>
+        </ul>
+      </div>
+    </div>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" class="logo" alt="Логотип сайта 'Device'">
+        </a>
+ <!-- Поиск, авторизация, сравнение и корзина не являются таковой. Основная навигация это "Каталог товаров, доставка, гарантия, контакты".
+Их и нужно оборачивать в нав.  -->
+        <div class="pagination-navigation">
+           <ul class="site-navigation">
+              <li><a href="product-catalog.html">каталог товаров</a></li>
+           </ul>
+              <div class="product-catalog">
+                <ul class="navigation-list">
+                  <li class="navigation-item">Виртуальная реальность<a class="navigation-link">
+                  <li class="navigation-item">Моноподы для селфи<<a class="navigation-link">
+                  <li class="navigation-item">Экшн-камеры<a class="navigation-link">
+                </ul>
+                <ul class="navigation-list">
+                  <li class="navigation-item">Фитнесс-браслеты<a class="navigation-link">
+                  <li class="navigation-item">Умные часы<a class="navigation-link">
+                </ul>
+                <ul class="navigation-list">
+                   <li class="navigation-item">Квадрокоптеры<a class="navigation-link">
+                </ul>
+                </div>
+                <ul class="obligation">
+                  <li><a href="delivery">доставка</a></li>
+                  <li><a href="guarantee">гарантия</a></li>
+                  <li><a href="contact">контакты</a></li>
+               </ul>
+          </div>
+      </div>
+    </nav>
+    </header>
+
+    <p class="item"><h2>Моноподы для селфи</h2></p>
+    <div class="major"><!--Главная-каталог товаров-моноподы !-->
+
+    <main class="container">
+      <section class="choice">
+        <section class="filter"> <!--или через списки делать?  -->
+          <div class="price">Стоимость</div>
+          <div class="color">Цвет</div>
+          <div class="bluetooth">Блютуз</div>
+          <div class="show">показать</div>
+        </section>
+        <section class="sort"><!-- display:inline-block; Цена-тип-популярность !-->
+          <ul class="features">
+            <li><a class="features-link">цена</li>
+              <li><a class="features-link">тип</li>
+                <li><a class="features-link">популярность</li>
+                </ul>
+          </section>
+        <section class="picture">
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="main footer">
+          <h2 class="main-footer-logo">Device</h2>
+      <!-- С точки зрения валидности кода, заголовок первого уровня может быть у каждого тега section. Но с точки зрения СЕО-оптимизации заголовок первого уровня должен быть только один на страницу. И целесообразно размещать его в самом верху страницы.  -->
+          <p class="footer contact">
+            <address>г.Москва, ул. Строителей, 15</address>
+          </p>
+            <ul>
+              <li><a class="Login-link" href="login-html">Вход-Выход</a></li>
+              <li><a href="compare">Сравнить</a></li>
+              <li><a href="shopping cart">Корзина</a></li>
+           </ul>
+           <ul class="footer-navigation">
+             <li><a href="delivery">доставка</a></li>
+             <li><a href="guarantee">гарантия</a></li>
+             <li><a href="contact">контакты</a></li>
+           </ul>
+           <p>Тел.: +7(495)495-95-95</p>
+           <div class="footer-social">
+      <!-- <div class="footer-social"> лишний. Див удаляем, класс переписываем списку -->
+             <ul>
+               <li><a class="social-button" href="#">Фейсбук</a></li>
+               <li><a class="social-button" href="#">Инстаграм</a></li>
+               <li><a class="social-button" href="#">Телеграм</a></li>
+             </ul>
+           </div>
+           <p class="footer-copyright">
+             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+           </p>
+         </footer>
+       </body>
+      </html>
