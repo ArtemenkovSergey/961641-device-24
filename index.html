@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
-
   <body>
-
     <header class="main-header">
       <div class="main-navigation-wrapper">
          <div class="search-item">
@@ -31,7 +29,7 @@
     </div>
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.svg" class="logo" alt="Логотип сайта 'Device'">
+          <img src="img/logo.svg" width="163" height="35" class="logo" alt="Логотип сайта 'Device'">
         </a>
  <!-- Поиск, авторизация, сравнение и корзина не являются таковой. Основная навигация это "Каталог товаров, доставка, гарантия, контакты".
 Их и нужно оборачивать в нав.  -->
@@ -62,31 +60,49 @@
       </div>
     </nav>
     </header>
-
   <main class="container">
-<!-- Слайдер пока не проверяю. Тут все очень сыро и не вовремя. Их будут рассматривать чуть познее -->
-    <p style="text-align: center"><button>ПОДРОБНЕЕ</button> <!--прописать изменение фона кнопки при наведении !-->
-    <div class="slider">
-	    <input type="radio" name="point" id="slide1" checked>
+    <h1 class="visually-hidde">slider</h1>
+    <section class="promo-slider">
+      <h2 class="visually-hidde">Выбор слайда</h2>
+      <p><img src="img/slider-1-png.jpg" alt="Самая длинная палка-селфи" width="384px" height="186px" class="slider-1png">
+        <b>Делай селфи, как Бен Стиллер!</b>
+        Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+      <p style="text-align: center"><button>ПОДРОБНЕЕ</button></p> <!--прописать изменение фона кнопки при наведении -->
+         <p>
+      <input type="radio" name="point" id="slide1" checked>
 	    <input type="radio" name="point" id="slide2">
 	    <input type="radio" name="point" id="slide3">
-      <div class="slider">
-		    <div class="slides slide1"></div>
-		    <div class="slides slide2"></div>
-	    	<div class="slides slide3"></div>
-    </div>
-      <div class="controls">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-    </div>
-   </div>
+        </p>
+        <table>
+          <tr>
+            <td>8,5<span>м</span></td>
+            <td>длина палки</td>
+          </tr>
+            <td>5<span>кг</span></td>
+            <td>вес палки</td>
+          </tr>
+            <td>Карбон</td>
+            <td>материал</td>
+          </tr>
+        </table>
+        <!--физику слайдера опишем позже  <div class="slider">
+		      <div class="slides slide1"></div>
+		      <div class="slides slide2"></div>
+	      	<div class="slides slide3"></div>
+      </div>
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+       </div> -->
+       <figure class="gallery"
+
+   </section>
       <section class="device">
         <ul>
-          <li><a href="virtual reality"><img src="img/popular-1.png" class="popular-1" width="" height="" alt="">вертуальная реальность</a></li>
-<!-- Нет тега img, в который будет вставляться изображение девайса. Это касается всех элементов списка -->
+          <li><a href="virtual reality"><img src="img/popular-1.png" class="popular-1" width="" height="" alt="очки вертуальной реальности">вертуальная реальность</a></li>
           <li><a href="monopod"><img src="img/popular-2.png" class="popular-2" width="" height="" alt="">моноподы для селфи</a></li>
-          <li><a href="action camera"><img src="img/popular-3.png" class="popular-3" width="" height="" alt="">моноподы для селфи</a></li>
+          <li><a href="action camera"><img src="img/popular-3.png" class="popular-3" width="" height="" alt="">экшн камеры</a></li>
           <li><a href="fitness bracelet"><img src="img/popular-4.png" class="popular-4" width="" height="" alt="">фитнесс браслет</a></li>
           <li><a href="Smartwatch"><img src="img/popular-5.png" class="popular-5" width="" height="" alt="">умные часы</a></li>
           <li><a href="quadcopter"><img src="img/popular-6.png" class="popular-6" width="" height="" alt="">квадрокоптеры</a></li>
@@ -163,5 +179,15 @@
          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
        </p>
      </footer>
+     <section class="modal modal-mail">
+        <h2 class="visually-hidden">отправить почту</h2>
+            <p>Ваше имя ваш e-male текст письма</p>
+            <!--Здесь будет форма  -->
+            <span class="modal-close">x</span>
+          </section>
+          <section class="modal modal-map">
+             <h2 class="visually-hidden">подробнее о нас</h2>
+                 <span class="modal-close">x</span>
+          </section>
    </body>
  </html>
