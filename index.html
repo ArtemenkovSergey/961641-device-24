@@ -103,6 +103,16 @@
         <strong>Делай селфи, как Бен Стиллер!</strong>
         <p class="selfie-stick">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a class="detailed" href="#">подробнее</a> <!--прописать изменение фона кнопки при наведении -->
+        <div class="slider-obligation">
+          <input type="radio" name="slider" id="slider-switch-1" checked="">
+          <input type="radio" name="slider" id="slider-switch-2">
+          <input type="radio" name="slider" id="slider-switch-3">
+          <div class="slider-switch-wrapper">
+            <label for="slider-switch-1"></label>
+            <label for="slider-switch-2"></label>
+            <label for="slider-switch-3"></label>
+          </div>
+        </div>
         <table>
           <tr class="top-description">
             <td>8,5<span>м</span></td>
@@ -162,9 +172,10 @@
   </section>
   <section class="deviceys">
     <h2 class="visually-hidden">Популярные гаджеты</h2>
-    <ul>
+    <div class="Layer-1">
+    <ul class="deviceys-list">
       <li>
-        <p class="deviceys-list">
+        <p>
           <a href="virtual-reality.html">
             <img src="img/popular-1.png" class="popular-1" width="97" height="55" alt="">
           </a>
@@ -225,16 +236,19 @@
       </li>
     </ul>
   </section>
-  <div class="slider-obligation">
-    <input type="radio" name="slider" id="slider-switch-1" >
-    <input type="radio" name="slider" id="slider-switch-2" checked="">
-    <input type="radio" name="slider" id="slider-switch-3">
-    <div class="slider-switch-wrapper">
-      <label for="slider-switch-1"></label>
-      <label for="slider-switch-2"></label>
-      <label for="slider-switch-3"></label>
-    </div>
+  <div class="container">
+  <input class="services-slide-btn" type="radio" id="services-1" name="services-toggle" checked="">
+  <input class="services-slide-btn visual-hidden" type="radio" id="services-2" name="services-toggle">
+  <input class="services-slide-btn visual-hidden" type="radio" id="services-3" name="services-toggle">
+  <div class="services-slide-controls">
+    <label class="btn" for="services-1">Доставка</label>
+    <label class="btn" for="services-2">Гарантия</label>
+    <label class="btn" for="services-3">Кредит</label>
   </div>
+  <ul class="services-list">
+    блок со слайдами
+  </ul>
+</div>
   <section class="slider-2">
     <h2 class="visually-hidden">ДОСТАВКА</h2>
     <div class="obligation-item">
@@ -305,19 +319,21 @@
   </ul>
 </section>
 <section class="profile">
-  <h2>о нас</h2>
-  <p>Огромный выбор гаджетов неоставит равнодушным гика,
-    который есть в каждом из нас.</p>
-    <p>Мы можем доставить ваш товар в самые отдаленные точки
-      России.DEVISE работает со многими транспортными компаниями</p>
-      <ul>
-        <li><a href="#"></a>Деловые линии
-        </li>
-        <li><a href="#"></a>Автотрейдинг
-        </li>
-        <li><a href="#"></a>ЖелДорЭкспедиция
-        </li>
-      </ul>
+  <h2>О нас</h2>
+  <div class="block-profile">
+    <p>Огромный выбор гаджетов не оставит равнодушным гика,
+      который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки
+        России! DEVISE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li type="circle"><a href="#"></a>Деловые линии
+          </li>
+          <li type="circle"><a href="#"></a>Автотрейдинг
+          </li>
+          <li type="circle"><a href="#"></a>ЖелДорЭкспедиция
+          </li>
+        </ul>
+      </div>
       <span class="button-about">ПОДРОБНЕЕ О НАС</span>
     </section>
     <section class="modal modal-map">
@@ -332,11 +348,11 @@
       </button>
     </section>
     <section class="contact">
-      <h2 id="chapter-contact">КОНТАКТЫ</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете
-        проверить работоспособность покупки. Всякое бывает</p>
+      <h2 id="chapter-contact">Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+        проверить работоспособность покупки. Всякое бывает.</p>
         <p>
-          <img src="img/map-big-jpg.jpg" alt="местоположение на карте">
+          <img src="img/map-big-jpg.jpg" class="map-big" alt="местоположение на карте">
         </p>
         <h3>НАПИШИТЕ НАМ</h3>
         <p>
@@ -379,7 +395,8 @@
           <li><a class="social-button" href="#">Телеграм</a></li>
         </ul>
         <p class="copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" class="logo-html" alt="Логотип сайта htmlacademy">
         </p>
       </div>
     </footer>
@@ -388,7 +405,7 @@
       <form class="mail" action="/echo" method="post">
         <div class="name">
           <label for="name">Ваше имя</label>
-          <input type="text" id="name" name="full-name" placeholder="Имя Фамилия" required>
+          <input type="text" id="name" name="full-name" class="type-name" placeholder="Имя Фамилия" required>
         </div>
         <div class="mail">
           <label for="mail">Email</label>
