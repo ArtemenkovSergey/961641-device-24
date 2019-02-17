@@ -21,21 +21,21 @@ a {
 }
 /*описание кнопки*/
 /*.button {
-  font: inherit;
+font: inherit;
 
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
+text-align: center;
+color: #ffffff;
+vertical-align: middle;
+text-transform: uppercase;
 
-  background-color: #000000;
-  border: none;
+background-color: #000000;
+border: none;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #f0c52e;
+background-color: #f0c52e;
 } */
 
 .visually-hidden {
@@ -53,19 +53,17 @@ a {
   background-color:#f0c52e;
 }
 
-.logo {
+.logo-header {
   width: 163px;
   height: 35px;
 }
 
-
-
-.logo:hover {
+.logo-header:hover {
   background-image: url(img/logo-hover.svg);
   background-repeat: no-repeat;
 }
 
-.logo:active {
+.logo-header:active {
   background-image: url(img/logo-down.svg);
 }
 
@@ -327,18 +325,18 @@ background-color: #f0c52e;
 }
 
 .deviceys-list li {
-list-style: none;
+  list-style: none;
 }
 
 .deviceys-list a {
-color: #000000;
+  color: #000000;
 }
 
 /*.Layer-1 {
-  width: 160px;
- height: 160px;
- opacity: 0.5;
- background-color:#f0c52e;
+width: 160px;
+height: 160px;
+opacity: 0.5;
+background-color:#f0c52e;
 }*/
 
 .popular-1 {
@@ -500,6 +498,12 @@ background-color: #ffc600;
   border: transparent;
 }
 
+.name label {
+  font-size: 18px;
+  text-align: left;
+  line-height: 24px;
+}
+
 .name input {
   opacity: 0.4;
   font-family: OpenSans;
@@ -511,7 +515,7 @@ background-color: #ffc600;
 }
 
 .name input:hover {
-background-color: #eaeaea;
+  background-color: #eaeaea;
 }
 
 .name input:focus,
@@ -528,27 +532,97 @@ background-color: #eaeaea;
   color: #464646;
   opacity: 1;
 }
-
-/*.name input:invalid {
-  background-color: #f6dada;
+/*розовый фон при невалидном вводе данных*/
+/*.name input:required:invalid {
+background-color: #f6dada;
 }
 
-.name input:invalid {
-  color: #464646;
-  opacity: 0.4;
+.name input:required:invalid {
+color: #464646;
+opacity: 0.4;
 }*/
 
+.main-footer {
+  width: 1440px;
+  height: 740px;
+  background-color: #464646;
+  background-position: center;
+}
 
-.logo-html {
+.logo-footer {
+
+}
+
+.user-navigation-footer,
+.footer-navigation,
+.social-buttons {
+  list-style: none;
+}
+
+.user-navigation-footer a {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: red;
+  opacity: 0.7;
+}
+
+.user-navigation-footer a:hover,
+.user-navigation-footer a:focus {
+  opacity: 1;
+}
+
+.user-navigation-footer a:active {
+  opacity: 0.3;
+}
+
+.footer-middle address {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: red;
+  opacity: 1;
+  } /*почему курсив получился?*/
+
+  .footer-navigation a {
+    color: red;
+  }
+
+  .footer-navigation a:hover,
+  .footer-navigation a:focus {
+  opacity: 0.6;
+  }
+
+  .footer-navigation a:active {
+  opacity: 0.3;
+  }
+
+.tel a {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: red;
+  opacity: 1;
+}
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
-.logo-html {
-  fill: #FFC600;
+svg{
+fill: #FFC600;
 }
 
-.logo-html:hover{
-  fill:green;
+svg:hover,
+svg:focus {
+  opacity: 0.6;
+}
+
+svg:active {
+  opacity: 0.3;
 }
