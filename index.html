@@ -10,8 +10,9 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="logo">
-      <img src="img/logo.svg" width="163" height="35" class="logo-header" alt="Логотип сайта 'Device'">
+    <a class="logotype"><span class="visually-hidden">Логотип сайта Device</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35"><path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" />
+      </svg>
     </a>
     <div class="main-navigation-wrapper">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -39,9 +40,9 @@
         <ul class="site-navigation">
           <li class="catalog-list">
             <a href="product-catalog.html">каталог товаров</a>
-          </li>
+          <!--</li>
         </ul>
-        <div class="product-catalog">
+        <div class="product-catalog">-->
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Виртуальная реальность
@@ -67,7 +68,9 @@
               <a class="navigation-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </div>
+        </li>
+      </ul>
+      <!--</div>-->
         <ul class="obligation">
           <li>
             <a href="#chapter-delivery">доставка</a>
@@ -100,7 +103,8 @@
       </div>
       <div class="slide-description">
         <span class="slide-number1">01</span>
-        <strong>Делай селфи, как Бен Стиллер!</strong>
+        <strong>Делай селфи,<br>
+          как Бен Стиллер!</strong>
         <p class="selfie-stick">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a class="detailed" href="#">подробнее</a> <!--прописать изменение фона кнопки при наведении -->
         <div class="slider-obligation">
@@ -134,7 +138,7 @@
       </div>
       <div class="slide-description">
         <span class="slide-number2">02</span>
-        <strong>Худеем правильно!</strong>
+        <strong>Худеем<br> правильно!</strong>
         <p class="bracelet">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
         <a class="detailed" href="#">подробнее</a> <!--прописать изменение фона кнопки при наведении -->
         <table>
@@ -236,7 +240,7 @@
       </li>
     </ul>
   </section>
-  <div class="container">
+  <div class="container-slide">
   <input class="services-slide-btn" type="radio" id="services-1" name="services-toggle" checked="">
   <input class="services-slide-btn visual-hidden" type="radio" id="services-2" name="services-toggle">
   <input class="services-slide-btn visual-hidden" type="radio" id="services-3" name="services-toggle">
@@ -272,7 +276,7 @@
     </div>
     <div class="obligation-description">
       <h2 id="chapter-guarantee">ГАРАНТИЯ</h2>
-      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
         Товар, не дом, конечно же.
       </p>
     </div>
@@ -301,19 +305,27 @@
   <h2 class="visually-hidden">Наши бренды</h2>
   <ul class="brend-list">
     <li>
-      <a href="#"><img src="img/logo-01-jpg.png" class="logo-1" width="260" height="100" alt="">
+      <a href="#">
+        <img src="img/logo-1-jpg.png" class="logo logo-1" alt=""/>
+        <img src="img/logo-01-jpg.png" class="logo logo-1-hover" alt="">
       </a>
     </li>
     <li>
-      <a href="#"><img src="img/logo-02-jpg.png" class="logo-1" width="260" height="100" alt="">
+      <a href="#">
+        <img src="img/logo-2-jpg.png" class="logo logo-2" alt=""/>
+        <img src="img/logo-02-jpg.png" class="logo logo-2-hover" alt="">
       </a>
     </li>
     <li>
-      <a href="#"><img src="img/logo-03-jpg.png" class="logo-1" width="260" height="100" alt="">
+      <a href="#">
+        <img src="img/logo-3-jpg.png" class="logo logo-3" alt=""/>
+        <img src="img/logo-03-jpg.png" class="logo logo-3-hover" alt="">
       </a>
     </li>
     <li>
-      <a href="#"><img src="img/logo-04-jpg.png" class="logo-1" width="260" height="100" alt="">
+      <a href="#">
+        <img src="img/logo-4-jpg.png" class="logo logo-4" alt=""/>
+        <img src="img/logo-04-jpg.png" class="logo logo-4-hover" alt="">
       </a>
     </li>
   </ul>
@@ -362,8 +374,9 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="163" height="35" class="logo-footer" alt="Логотип сайта 'Device'">
+        <a class="logotype-footer"><span class="visually-hidden">Логотип сайта Device</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35"><path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" />
+          </svg>
         </a>
         <ul class="user-navigation-footer">
           <li><a class="Login-link" href="login.html">Войти</a></li>
@@ -372,7 +385,7 @@
         </ul>
       </div>
       <div class="footer-middle">
-        <address>г.Москва, ул. Строителей, 15</address>
+        <p class="address">г.Москва, ул. Строителей, 15</p>
         <ul class="footer-navigation">
           <li>
             <a href="delivery.html">доставка</a>
@@ -390,9 +403,9 @@
       </div>
       <div class="footer-bottom">
         <ul class="social-buttons">
-          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span><svg></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span><svg></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Телеграм</span><svg></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Телеграм</span></a></li>
         </ul>
       </div>
       <div class="cont-svg">
