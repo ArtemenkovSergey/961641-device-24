@@ -38,13 +38,13 @@ border: none;
 background-color: #f0c52e;
 } */
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-}
+}*/
 
 /*.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -313,6 +313,10 @@ svg:active {
   opacity: 0.1;
 }
 /*фильтр каталог*/
+.filters li {
+  list-style: none;
+}
+
 .filters-list {
   font-size: 16px;
   line-height: 24px;
@@ -423,7 +427,7 @@ opacity: 1.0;
 .to-cart {
   background-clip: border-box;
   background-color: #f0c52e;
-  width: 200px;
+  max-width: 200px;
   height: 8px;
   margin-left: 20px;
   padding-left: 37px;
