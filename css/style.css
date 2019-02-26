@@ -599,40 +599,106 @@ p {
 .deviceys-list a {
   color: #000000;
 }
+
+.deviceys-item-1 {
+  background-color: #f0c52e;
+  height: 160px;
+  width: 160px;
+}
 /*популярные товары*/
+
 .popular-1 {
   background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 52px 32px 53px 31px;
+  margin-left: 20px;
+  border: 2px solid #000000;
+}
+
+.popular-1:hover,
+.popular-1:focus {
+  background-clip: padding-box;
+  background-color: #f0c52e;
+  opacity: 1.0;
 }
 
 .popular-2 {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 43px 36px 0px 38px;
+  margin-left: 20px;
+  border: 2px solid #000000;
+}
+
+.popular-2:hover,
+.popular-2:focus {
+  background-clip: padding-box;
+  background-color: #f0c52e;
+  opacity: 1.0;
 }
 
 .popular-3 {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 38px 40px 35px 49px;
+  margin-left: 20px;
+  border: 2px solid #000000;
+}
+
+.popular-3:hover,
+.popular-3:focus {
+  background-clip: padding-box;
+  background-color: #f0c52e;
+  opacity: 1.0;
 }
 
 .popular-4 {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 50px 25px 45px 28px;
+  margin-left: 20px;
+  border: 2px solid #000000;
+}
+
+.popular-4:hover,
+.popular-4:focus {
+  background-clip: padding-box;
+  background-color: #f0c52e;
+  opacity: 1.0;
 }
 
 .popular-5 {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 32px 49px 30px 55px;
+  margin-left: 20px;
+  border: 2px solid #000000;
+}
+
+.popular-5:hover,
+.popular-5:focus {
+  background-clip: padding-box;
+  background-color: #f0c52e;
+  opacity: 1.0;
 }
 
 .popular-6 {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 0.5;
+  padding: 49px 15px 42px 13px;
+  margin-left: 20px;
+  border: 2px solid #000000;
 }
 
-.deviceys-list li:hover,
-.deviceys-list li:focus {
+.popular-6:hover,
+.popular-6:focus {
+  background-clip: padding-box;
   background-color: #f0c52e;
   opacity: 1.0;
 }
@@ -745,7 +811,7 @@ html {
 }
 
 /*Бренды*/
-/*.brend-list li {
+.brend-list li {
   list-style: none;
 }
 
@@ -776,11 +842,11 @@ a {
   left: 0;
   width: 150px;
   height: 100px;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 a:hover .logo-1-hover {
     opacity: 0;
-}*/
+}
 
 /*Блок О нас*/
 .profile h2,
