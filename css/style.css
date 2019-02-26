@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -46,28 +46,10 @@ background-color: #f0c52e;
   margin: -1px;
 }
 
-/*.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; */
-
 .main-header {
   width: 1160px;
   height: 299px;
   background-color: rgba(240, 197, 46, 0.5);
-  background-color:#f0c52e;
 }
 
 /*логотип Девайс */
@@ -132,7 +114,7 @@ svg:active {
 }
 
 .main-navigation-wrapper {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -241,16 +223,24 @@ svg:active {
   position: relative;
 }
 
-.site-navigation > li > ul {
+/*.site-navigation > li > ul {
   display: none;
 }
 
 .site-navigation > li:hover > ul {
   display: block;
+}*/
+
+.product-catalog {
+  display: none;
+}
+
+.catalog-list:hover .product-catalog {
+  display: flex;
 }
 
 .navigation-item a {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -289,7 +279,7 @@ svg:active {
 }
 
 .breadcrumbs {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -337,7 +327,7 @@ svg:active {
 .filters ul {
   font-style: none;
   line-height: 40px;
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 2.86;
@@ -368,7 +358,7 @@ svg:active {
 
 .sort-link,
 .sort-link {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -476,7 +466,7 @@ opacity: 1.0;
 }
 
 .catalog-list span {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -518,7 +508,7 @@ strong {
 }
 
 p {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -598,7 +588,7 @@ p {
 .bottom-description {
   width: 78px;
   height: 11px;
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -627,8 +617,7 @@ p {
 
 .deviceys-item .popular-1 {
   background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
+  background-color: rgba(240, 197, 46, 0.5);
   height: 160px;
   width: 160px;
 
@@ -655,8 +644,11 @@ p {
 .popular-1:hover,
 .popular-1:focus {
   background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-1:active {
+  opacity: 0.3;
 }
 
 .popular-2 {
@@ -900,7 +892,7 @@ a:hover .logo-1-hover {
 }
 
 .block-profile p {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
@@ -1033,7 +1025,7 @@ fill: #f0c52e;
 }
 
 .user-navigation-footer a {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1051,7 +1043,7 @@ fill: #f0c52e;
 }
 
 .address {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1073,7 +1065,7 @@ fill: #f0c52e;
 }
 
 .tel a {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #f0c52e;
