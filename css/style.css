@@ -5,11 +5,13 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  letter-spacing: 3.6px;
   color: #000000;
 
   background-color: #ffffff;
@@ -53,34 +55,33 @@ background-color: #f0c52e;
 }
 
 /*логотип Девайс */
-*{
+.logotype {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
 }
-svg:not(:hover) {
+
+.logotype svg:not(:hover) {
 fill: #000000;
 }
 
-svg:hover,
-svg:focus {
+.logotype svg:hover,
+.logotype svg:focus {
   fill: #000000;
   opacity: 0.6;
 }
 
-svg:active {
+.logotype svg:active {
   fill: #000000;
   opacity: 0.3;
 }
-
+/*поиск по сайту*/
 .search-form {
   display: flex;
   width: 440px;
   font-size: 15px;
   text-align: left;
-  line-height: 2;
-  color: black;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .search-form-input {
@@ -93,7 +94,7 @@ svg:active {
 }
 
 .search-form-button {
-  border: 2px solid black;
+  border: 2px solid #000000;
   background: 0;
   background-color: #f7e296;
   width: 85px;
@@ -105,7 +106,7 @@ svg:active {
 .search-form-input:focus {
   opacity: 1;
   outline: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
 
 .search-form-input:focus + .search-form-button,
@@ -118,6 +119,7 @@ svg:active {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: 0.15px;
   color: #000000;
 }
 
@@ -156,10 +158,10 @@ svg:active {
 }
 
 .site-navigation a {
-  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  letter-spacing: 3.6px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -177,36 +179,7 @@ svg:active {
   opacity: 0.3;
 }
 
-/*.navigation-item a {
-  display: none;
-}*/
-
 /*выпадающий список*/
-/*.product-catalog {
-  width: 180px;
-  background-color: #f0c52e;
-  color: #000000;
-  padding: 10px;
-}
-
-.product-catalog ul {
-  min-width: 150px;
-  position: absolute;
-  color: #000000;
-  padding: 0;
-
-  display: none;
-}
-
-.navigation-list li {
-  list-style-type: none;
-  padding: 0px;
-}
-
-.product-catalog > li:hover > ul {
-  display: block;
-}*/
-
 .site-navigation li {
   list-style: none;
 }
@@ -223,14 +196,6 @@ svg:active {
   position: relative;
 }
 
-/*.site-navigation > li > ul {
-  display: none;
-}
-
-.site-navigation > li:hover > ul {
-  display: block;
-}*/
-
 .product-catalog {
   display: none;
 }
@@ -242,8 +207,9 @@ svg:active {
 .navigation-item a {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 36px;
   font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
   color: #000000;
 }
 
@@ -347,7 +313,6 @@ svg:active {
 /*сортировка каталог*/
 .sort-list {
   list-style: none;
-  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -403,7 +368,6 @@ opacity: 1.0;
 }
 
 .to-cart {
-  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -423,7 +387,6 @@ opacity: 1.0;
   display: inline-block;
   min-width: 160px;
   max-width: 100%;
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1;
@@ -503,15 +466,18 @@ opacity: 1.0;
   opacity: 1;
 }
 
-strong {
+.slide-description strong {
   font-size: 47px;
+  line-height: 56px;
+  line-height: 0.47px;
 }
 
-p {
+.slide-description p {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: 0.13px; /*по макету 0.15 иначе не уложиться в 2 строки при заданной максимальнойширине*/
   color: #000000;
 }
 
@@ -520,6 +486,7 @@ p {
 .slide-number3 {
   font-size: 179px;
   line-height: 179px;
+  letter-spacing: 1.79px;
   color: red; /*#ffffff*/
 }
 
@@ -527,14 +494,13 @@ p {
 
 .detailed {
   margin-bottom: 24px;
-  padding: 11px 43px 13px 44px;
+  padding: 11px 43px 10px 44px;
   cursor: pointer;
   position: relative;
   z-index: 1;
   display: inline-block;
   min-width: 160px;
   max-width: 100%;
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1;
@@ -571,12 +537,10 @@ p {
 }
 
 .selfie-stick {
-  width: 479px;
-  height: 46px;
+  max-width: 479px;
 }
 
 .top-description {
-  font-family: "Gilroy-Light", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -586,8 +550,6 @@ p {
 }
 
 .bottom-description {
-  width: 78px;
-  height: 11px;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
@@ -598,15 +560,13 @@ p {
 }
 
 .bracelet {
-  width: 439px;
-  height: 46px;
+  max-width: 439px;
 }
 
 .quadcopter {
-  width: 449px;
-  height: 46px;
+  max-width: 449px;
 }
-
+/*популярные товары*/
 .deviceys-list li {
   list-style: none;
 }
@@ -615,18 +575,14 @@ p {
   color: #000000;
 }
 
-.deviceys-item .popular-1 {
-  background-clip: padding-box;
+.color-box {
   background-color: rgba(240, 197, 46, 0.5);
   height: 160px;
   width: 160px;
-
 }
 
 .deviceys-item h3 {
-  width: 157px;
-  height: 16px;
-  font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
+  max-width: 160px;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -634,101 +590,43 @@ p {
   text-align: left;
   margin-top: 39px;
 }
-/*популярные товары*/
 
 .popular-1 {
-  padding: 52px 32px 53px 31px;
-  opacity: 1.0;
+  margin: 52px 32px 53px 31px;
 }
 
-.popular-1:hover,
-.popular-1:focus {
-  background-clip: padding-box;
+.color-box:hover,
+.color-box:focus {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.popular-1:active {
+.popular-1:active,
+.popular-2:active,
+.popular-3:active,
+.popular-4:active,
+.popular-5:active,
+.popular-6:active,{
   opacity: 0.3;
 }
 
 .popular-2 {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
-  padding: 43px 36px 0px 38px;
-
-
-}
-
-.popular-2:hover,
-.popular-2:focus {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+  margin:  43px 36px 0px 38px;
 }
 
 .popular-3 {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
-  padding: 38px 40px 35px 49px;
-
-
-}
-
-.popular-3:hover,
-.popular-3:focus {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+  margin: 38px 40px 35px 49px;
 }
 
 .popular-4 {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
-  padding: 50px 25px 45px 28px;
-
-
-}
-
-.popular-4:hover,
-.popular-4:focus {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+  margin: 50px 25px 45px 28px;
 }
 
 .popular-5 {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
-  padding: 32px 49px 30px 55px;
-
-
-}
-
-.popular-5:hover,
-.popular-5:focus {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+margin: 32px 49px 30px 55px;
 }
 
 .popular-6 {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 0.5;
-  padding: 49px 15px 42px 13px;
-
-
-}
-
-.popular-6:hover,
-.popular-6:focus {
-  background-clip: padding-box;
-  background-color: #f0c52e;
-  opacity: 1.0;
+  margin: 49px 15px 42px 13px;
 }
 
 .deviceys-list a:active {
@@ -775,11 +673,10 @@ html {
   display: inline-block;
   min-width: 160px;
   max-width: 100%;
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1;
-  letter-spacing: 0.2em;/*переписать в px*/
+  letter-spacing: 3.6px;
   color: #000000;
   opacity: 1;
   text-transform: uppercase;
@@ -824,9 +721,19 @@ html {
   height: 100%;
 }
 
+.obligation-description h2 {
+  font-size: 47px;
+  font-weight: 800;;
+  line-height: 0.47px;
+  letter-spacing: 0.5px;
+}
+
 .obligation-description p {
-  width: 426px;
-  height: auto;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.2px;
 }
 
 .chapter-guarantee p {
@@ -881,20 +788,75 @@ a:hover .logo-1-hover {
 .profile h2,
 .contact h2 {
   font-size: 47px;
+  font-weight: 800;
   line-height: 48px;
+  letter-spacing: 0.5px;
   text-align: left;
 }
 
 .block-profile {
-  width: 462px;
-  height: 315px;
+  max-width: 462px;
   text-align: left;
 }
 
-.block-profile p {
+.block-profile p,
+.contact p {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
+  font-weight: 300;
   line-height: 30px;
+  letter-spacing: normal;
+}
+
+.company li {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.2px;/*в зеплине он не указан, но к макету так ближе*/
+}
+
+.button-about {
+  margin-bottom: 24px;
+  padding: 11px 23px 10px 22px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 160px;
+  max-width: 100%;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 3.6px;
+  color: #000000;
+  opacity: 1;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  background: 0;
+  border: none;
+}
+
+.button-about::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  transition: .3s linear;
+}
+
+.button-about:hover::after,
+.button-about:focus::after {
+  height: 100%;
+}
+
+.button-about :active {
+  opacity: 0.3;
 }
 
 .contact p {
@@ -1027,9 +989,10 @@ fill: #f0c52e;
 .user-navigation-footer a {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 30px;
   font-weight: 300;
-  color: #f0c52e;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: rgb(255, 255, 255);
   opacity: 0.7;
 }
 
@@ -1047,12 +1010,12 @@ fill: #f0c52e;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #f0c52e;
-  opacity: 1;
+  letter-spacing: normal;
+  color: rgb(255, 255, 255);
 }
 
 .footer-navigation a {
-  color: #f0c52e;
+  color: rgb(255, 255, 255);
 }
 
 .footer-navigation a:hover,
@@ -1067,12 +1030,30 @@ fill: #f0c52e;
 .tel a {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 30px;
-  color: #f0c52e;
-  opacity: 1;
+  font-weight: 300;
+  line-height: 2;
+  color: rgb(255, 255, 255);
+  letter-spacing: normal;
 }
 
-.social-buttons a {
+/*социальные сети*/
+.social-button svg {
+  fill: #f0c52e;
+  opacity: 0.3;
+}
+
+.social-button svg:hover,
+.social-button svg:focus {
+  fill: #f0c52e;
+  opacity: 0.6;
+}
+
+.social-button svg:active {
+  fill: #f0c52e;
+  opacity: 0.1;
+}
+
+/*.social-buttons a {
   width: 80px;
   height: 80px;
   background: #e1e1e1;
@@ -1088,26 +1069,17 @@ fill: #f0c52e;
   bottom: 0;
   left: 0;
   margin: auto;
-  background: url("img/")/*img - нужно прописать путь к иконке; */
+  background: url("img/")/*img - нужно прописать путь к иконке;
   width: 30px;
   height: 30px;
   background: #000000;
-}
-
-.social-buttons a:hover {
-  background: #e74246;
-}
-
-.social-buttons a:active::after {
-  opacity: 0.3;
-}
-
+}*/
+/*
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-}
+}*/
 
 .logo-html svg{
 fill: #FFC600;
