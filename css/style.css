@@ -20,6 +20,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 /*описание кнопки*/
 /*.button {
@@ -759,7 +760,7 @@ html {
 }
 
 .logo-1 {
-  width: 150px;
+  width: 160px;
   height: 100px;
 }
 
@@ -767,7 +768,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
+  width: 160px;
   height: 100px;
   transition: 0.5s;
 }
@@ -800,16 +801,16 @@ a:hover .logo-1-hover {
   letter-spacing: normal;
 }
 
-.block-profile::after {
+/*.block-profile::after {
   content: "";
-  
+  position:
   top: 40%;
   left: 40%;
   z-index: 1;
   width: 80px;
   height: 8px;
   background-color: #000000;
-}
+}*/
 
 .company li {
   font-size: 16px;
