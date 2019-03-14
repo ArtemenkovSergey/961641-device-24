@@ -2,10 +2,20 @@
 } body > * > * { background-color: rgba(255,255,0,0.5);
 } body > * > * > * { background-color: rgba(0,255,0,0.5);
 } body > * > * > * { background-color: rgba(255,0,255,0.5); }*/
-body {
-  margin: 0;
-  padding: 0;
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /*margin: 0;
+  padding: 0;*/ /*для каждого отдельно пропишем*/
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -131,8 +141,18 @@ fill: #000000;
 }
 
 .user-navigation,
-.user-comparison  {
+.user-comparison {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  width: 69px;
+}
+
+.user-comparison {
+  width: 263px;
 }
 
 .user-navigation a,
@@ -152,13 +172,15 @@ fill: #000000;
   opacity: 0.3;
 }
 
-/*.site-navigation a {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  letter-spacing: 3.6px;
-  color: #000000;
-}*/
+.site-navigation {
+  width: 426px;
+}
+
+.site-navigation:hover {
+width: 1160px;
+padding-bottom: 166px;
+background-color: rgb(247, 226, 150);
+}
 
 .navigation-item {
   list-style: none;
@@ -219,6 +241,9 @@ fill: #000000;
 
 .obligation {
   list-style: none;
+  width: 500px;
+  padding: 0;
+  margin: 0;
 }
 
 .obligation a {
