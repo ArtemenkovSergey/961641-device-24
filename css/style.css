@@ -1,21 +1,11 @@
-/* body > * { background-color: rgba(255,0,0,0.5);
+ body > * { background-color: rgba(255,0,0,0.5);
 } body > * > * { background-color: rgba(255,255,0,0.5);
 } body > * > * > * { background-color: rgba(0,255,0,0.5);
-} body > * > * > * { background-color: rgba(255,0,255,0.5); }*/
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
+} body > * > * > * { background-color: rgba(255,0,255,0.5); }
 body {
-  /*margin: 0;
-  padding: 0;*/ /*для каждого отдельно пропишем*/
+  margin: 0;
+  padding: 0;
+
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -42,6 +32,11 @@ a {
 }
 
 .main-header {
+  margin: 40px 140px;
+  display: flex;
+  flex-direction: column;
+
+
   width: 1160px;
   height: 299px;
   background-color: rgba(240, 197, 46, 0.5);
@@ -141,18 +136,11 @@ fill: #000000;
 }
 
 .user-navigation,
-.user-comparison {
-  list-style: none;
+.user-comparison  {
   margin: 0;
   padding: 0;
-}
 
-.user-navigation {
-  width: 69px;
-}
-
-.user-comparison {
-  width: 263px;
+  list-style: none;
 }
 
 .user-navigation a,
@@ -172,13 +160,9 @@ fill: #000000;
   opacity: 0.3;
 }
 
-.site-navigation {
-  width: 426px;
-}
-
 .site-navigation:hover {
 width: 1160px;
-padding-bottom: 166px;
+padding-bottom: 129px;
 background-color: rgb(247, 226, 150);
 }
 
@@ -240,10 +224,10 @@ background-color: rgb(247, 226, 150);
 }
 
 .obligation {
+ padding: 0;
+ margin: 0;
+
   list-style: none;
-  width: 500px;
-  padding: 0;
-  margin: 0;
 }
 
 .obligation a {
@@ -522,6 +506,11 @@ opacity: 1.0;
 
 /*слайдер селфи палка браслет квадрокоптер*/
 .slider {
+  /*width: 1129px;*/
+  display: flex;
+ justify-content: space-between;
+  margin-left: 230px;
+  padding-top: 0;
   margin-top: -111px;/*для наползания секции со слайдами*/
   margin-bottom: 106px;
   background: transparent;
@@ -556,6 +545,16 @@ opacity: 1.0;
   opacity: 1;
 }
 
+.slide {
+  width: 384px;
+}
+.slide-description {
+  box-sizing: content-box;
+  width: 597px;
+  padding-top: 0px;
+  /*margin-top: -21px;чтобы наехать на хедер*/
+}
+
 .slide-description strong {
   font-size: 47px;
   line-height: 56px;
@@ -588,29 +587,14 @@ opacity: 1.0;
   font-size: 179px;
   line-height: 179px;
   letter-spacing: 1.79px;
-  color: red; /*#ffffff*/
+  color: #ffffff;
+  height: 133px;
 }
 /*отступы в таблице популярных товаров*/
 .slider table {
-  margin: 0 auto;
+  margin-left: -80px;
   border-spacing: 80px 5px;
 }
-
-/*наползание блока слайдер на хедер*/
-/*.main-header
-.slider
-
-.slider {
-  opacity: 0.6;
-}
-
-.slider {
-  background: transparent;
-  }
-
-.main-header {
-  margin-top: -151px;
-}*/
 
 /*Кнопка Подробнее*/
 
@@ -687,7 +671,15 @@ opacity: 1.0;
 }
 /*популярные товары*/
 .deviceys-list li {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.deviceys-list {
+    margin-left: 140px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .deviceys-list a {
