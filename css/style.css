@@ -671,13 +671,16 @@ opacity: 1.0;
 }
 /*популярные товары*/
 .deviceys-list li {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
+.deviceys-list li:last-child {
+  margin-right: 140px;
+}
+
 .deviceys-list {
-    margin-left: 140px;
+  padding: 0;
+  margin-left: 140px;
   display: flex;
   justify-content: space-between;
 }
