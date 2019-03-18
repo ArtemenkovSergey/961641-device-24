@@ -508,6 +508,20 @@ opacity: 1.0;
 }
 
 /*описание карточек товаров в каталоге*/
+.denomination-1 {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.denomination-1 h3 {
+  padding: 0;
+}
+
+.cost {
+  margin-top: 25px;
+}
+
 .catalog-item {
   position: relative;
   width: 360px;
@@ -515,7 +529,7 @@ opacity: 1.0;
   margin-right: 40px;
 }
 
-.catalog-item:nth-child(3) {
+.catalog-item:nth-child(2) {
   margin-right: 0;
 }
 
@@ -605,6 +619,12 @@ opacity: 1.0;
   margin-left:-25%;
   top: 25%;
   text-align:center;
+  z-index: -1;
+}
+
+.user-sale .catalog-list img:hover,
+.user-sale .catalog-list img:focus  {
+  z-index: 1;
 }
 
 .catalog-list a {
