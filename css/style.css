@@ -206,11 +206,15 @@ fill: #000000;
   /*align-items: center;*/
 }
 
-.site-navigation:hover {
-/*width: 1160px;
-padding-bottom: 129px;*/
-background-color: rgb(247, 226, 150);
+.pagination-navigation ul {
+  padding: 0;
+  margin-left: 0;
 }
+
+/*.site-navigation:hover {
+padding-bottom: 129px;
+background-color: rgb(247, 226, 150);
+} задать фон флексу*/
 
 .navigation-item {
   list-style: none;
@@ -236,12 +240,11 @@ background-color: rgb(247, 226, 150);
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .product-catalog {
   padding: 0;
-  margin-left: -40px;
+  /*margin-left: -40px;*/
 }
 
 .product-catalog {
@@ -250,6 +253,8 @@ background-color: rgb(247, 226, 150);
 
 .site-catalog-list:hover .product-catalog {
   display: flex;
+
+  background-color: rgba(247, 226, 150, 1);
 }
 
 .navigation-item a {
@@ -495,9 +500,9 @@ opacity: 1.0;
 opacity: 1.0;
 }
 
-.catalog-cards {
-  width: 760px;
+.catalog-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -508,13 +513,13 @@ opacity: 1.0;
 }
 
 /*описание карточек товаров в каталоге*/
-.denomination-1 {
+.denomination {
   width: 360px;
   display: flex;
   justify-content: space-between;
 }
 
-.denomination-1 h3 {
+.denomination h3 {
   padding: 0;
 }
 
@@ -529,9 +534,9 @@ opacity: 1.0;
   margin-right: 40px;
 }
 
-.catalog-item:nth-child(2) {
-  margin-right: 0;
-}
+/*.catalog-list:nth-child(2) {
+  margin-right: 40px;
+}*/
 
 .catalog-list img:hover,
 .catalog-list img:focus {
@@ -539,16 +544,16 @@ opacity: 1.0;
   background-color: #eeeeee;
 }
 
-.to-compare {
+.button-to-compare {
   opacity: 0.5;
 }
 
-.to-compare:hover,
-.to-compare:focus {
+.button-to-compare:hover,
+.button-to-compare:focus {
   opacity: 1.0;
 }
 
-.to-compare:active {
+.button-to-compare:active {
   opacity: 0.2;
 }
 
@@ -561,7 +566,7 @@ opacity: 1.0;
   list-style: none;
 }
 
-.to-cart {
+.button-to-cart {
   letter-spacing: 3.6px;
   vertical-align: baseline;
   text-align: left;
@@ -569,7 +574,7 @@ opacity: 1.0;
 }
 /*коталог кнопка в корзину*/
 
-.to-cart {
+.button-to-cart {
   margin-bottom: 24px;
   padding: 14px 39px 14px 37px;
   cursor: pointer;
@@ -587,7 +592,7 @@ opacity: 1.0;
   border: none;
 }
 
-.to-cart::after {
+.button-to-cart::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -600,16 +605,16 @@ opacity: 1.0;
   transition: .3s linear;
 }
 
-.to-cart:hover::after,
-.to-cart:focus::after {
+.button-to-cart:hover::after,
+.button-to-cart:focus::after {
   height: 100%;
 }
 
-.to-cart:active {
+.button-to-cart:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.to-compare {
+.button-to-compare {
   margin-left: 14px;
 }
 
@@ -622,9 +627,14 @@ opacity: 1.0;
   z-index: -1;
 }
 
-.user-sale .catalog-list img:hover,
-.user-sale .catalog-list img:focus  {
+ .catalog-item:hover .user-sale,
+ .catalog-item:focus .user-sale {
   z-index: 1;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 71px auto auto 73px;
 }
 
 .catalog-list a {
@@ -672,13 +682,14 @@ opacity: 1.0;
 /*слайдер селфи палка браслет квадрокоптер*/
 .slider {
   /*width: 1129px;*/
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 60px;
   margin-top: -127px;/*для наползания секции со слайдами*/
   margin-bottom: 106px;
-  background: transparent;
+  background-color: transparent;
 }
 
 .slider input {
@@ -687,8 +698,8 @@ opacity: 1.0;
 
 .slider-switch-wrapper {
   position: absolute;
-  right: 153px;
-  bottom: -281px;
+  right: 80px;
+  bottom: 180px;
 }
 
 .slider-switch-wrapper label {
@@ -717,7 +728,6 @@ opacity: 1.0;
 
 .slide {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -759,7 +769,7 @@ opacity: 1.0;
   font-size: 179px;
   line-height: 179px;
   letter-spacing: 1.79px;
-  color: red; #ffffff;
+  color: #ffffff;
   position: absolute;
   top: 0;
   right: 0;
@@ -868,7 +878,6 @@ opacity: 1.0;
   letter-spacing: 0.18px;
   text-align: left;
   margin-top: 39px;
-
 }
 
 .popular-1 {
@@ -919,7 +928,7 @@ margin: 32px 49px 30px 55px;
   display: none;
 }
 
-.slider-obligation {
+.slider-middle {
   width: 1440px;
   padding: 0 20px;
   margin: 0px auto;
@@ -1231,16 +1240,17 @@ margin: 32px 49px 30px 55px;
 /*каталог pagination*/
 .pagination-list {
   padding: 0;
-  margin: 0;
+  margin: 41px auto auto 73px;
   display: flex;
   justify-content: space-between;
 
+  background-color: #ebebeb;
   list-style: none;
 }
 
-.pagination-list {
-  width: 759px;
-  background-color: #ebebeb;
+.pagination-list li{
+ padding: 0;
+ margin: 0;
 }
 
 .pagination-list a {
@@ -1251,8 +1261,6 @@ margin: 32px 49px 30px 55px;
 .pagination-backward:focus,
 .pagination-forward:hover,
 .pagination-forward:focus {
-  width: 136px;
-  height: 70px;
   background-color: #d9d9d9;
 }
 
@@ -1438,6 +1446,7 @@ fill: #f0c52e;
 .user-navigation-footer,
 .footer-navigation,
 .social-buttons {
+  padding: 0;
   list-style: none;
 }
 
