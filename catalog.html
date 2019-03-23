@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header">
+    <header class="main-header catalog">
       <a class="logotype" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35"><path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" />
         </svg>
@@ -24,16 +24,16 @@
             <li>
               <a class="logout-link" href="#">Валентин Петухов</a>
             </li>
-            <li>
+            <li class="logout-catalog">
               <a class="logout" href="/logout">Выйти</a>
             </li>
           </ul>
           <ul class="user-comparison">
             <li>
-              <a href="compare.html">Сравнить</a>
+                <a class="compare" href="compare.html">Сравнить</a>
             </li>
             <li>
-              <a href="cart.html">Корзина</a>
+              <a class="user-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
       <nav class="main-navigation">
         <div class="pagination-navigation">
           <ul class="site-navigation">
-            <li class="catalog-list">
+            <li class="site-catalog-list">
               <a href="product-catalog.html">КАТАЛОГ ТОВАРОВ</a>
               <div class="product-catalog">
                 <ul class="navigation-list">
@@ -72,13 +72,13 @@
             </li>
           </ul>
           <ul class="obligation">
-            <li>
+            <li class="chapter-delivery">
               <a href="#chapter-delivery">доставка</a>
             </li>
-            <li>
+            <li class="chapter-guarantee">
               <a href="#chapter-guarantee">гарантия</a>
             </li>
-            <li>
+            <li class="chapter-contact">
               <a href="#chapter-contact">контакты</a>
             </li>
           </ul>
@@ -149,7 +149,7 @@
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="color-black" checked>
+                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-black" id="color-black" checked>
                     <label for="color-black">Черный</label>
                   </li>
                   <li class="filter-option">
@@ -157,11 +157,11 @@
                     <label for="color-white">Белый</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="color-blue" checked>
+                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-blue" id="color-blue" checked>
                     <label for="color-blue">Синий</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="color-red" checked>
+                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-red" id="color-red" checked>
                     <label for="color-red">Красный</label>
                   </li>
                   <li class="filter-option">
@@ -174,7 +174,7 @@
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-module" value="presence" id="yes" checked>
+                    <input class="visually-hidden filter-input filter-input-radio-checked" type="radio" name="bluetooth-module" value="presence" id="yes" checked>
                     <label for="yes">Есть</label>
                   </li>
                   <li class="filter-option">
@@ -206,7 +206,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <p>
+                <p class="catalog-item-image">
                   <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </p>
                 <div class="denomination">
@@ -221,7 +221,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <p>
+                <p class="catalog-item-image">
                   <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </p>
                 <div class="denomination">
@@ -236,7 +236,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <p>
+                <p class="catalog-item-image">
                   <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
                   <!--    </p>
                   <p class="img-container new">
@@ -298,13 +298,13 @@
       <p class="address">г.Москва, ул. Строителей, 15</p>
       <ul class="footer-navigation">
         <li>
-          <a href="delivery">доставка</a>
+          <a href="delivery">ДОСТАВКА</a>
         </li>
         <li>
-          <a href="guarantee">гарантия</a>
+          <a href="guarantee">ГАРАНТИЯ</a>
         </li>
         <li>
-          <a href="contact">контакты</a>
+          <a href="contact">КОНТАКТЫ</a>
         </li>
       </ul>
       <p class="tel">
