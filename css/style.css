@@ -471,6 +471,7 @@ background-color: rgb(247, 226, 150);
   text-align: left;
   color: #000000;
   opacity: 0.3;
+  margin-bottom: 49px;
 }
 
 .breadcrumbs li {
@@ -530,7 +531,7 @@ background-color: rgb(247, 226, 150);
 }
 
 .category-right {
-  width: 70%;
+  width: 834px;
   padding-left: 73px;
 }
 
@@ -589,7 +590,7 @@ background-color: rgb(247, 226, 150);
 }
 
 .category fieldset:first-child {
-  margin-bottom: 35px;
+  margin-bottom: 3px;
 }
 
 .category legend {
@@ -621,12 +622,7 @@ background-color: rgb(247, 226, 150);
 }
 /*временно*/
 .filter-option {
-  margin-bottom: 16px;
-
   padding-left: 27px;
-
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .filter-option label{
@@ -763,6 +759,12 @@ background-color: rgb(247, 226, 150);
   opacity: 0.3;
 }
 
+.sort-link,
+.sort-link-active {
+  padding-left: 10px;
+}
+
+
 .sort-link:focus,
 .sort-link:hover {
 opacity: 0.6;
@@ -796,6 +798,39 @@ opacity: 1.0;
   justify-content: space-between;
 }
 
+.sort-item a {
+  position: relative;
+}
+
+.sort-link-active::after {
+  content: "";
+
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.sort-link-active::before {
+  content: "";
+
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .category-right .category-gray {
   display: flex;
   align-items: center;
@@ -814,9 +849,9 @@ opacity: 1.0;
   margin: 0;
 }
 
-.cost {
+/*.cost {
   margin: 0;
-}
+}*/
 
 .catalog-item {
   position: relative;
@@ -1000,7 +1035,7 @@ opacity: 1.0;
 .slider-switch-wrapper {
   position: absolute;
   right: 80px;
-  bottom: 180px;
+  bottom: 160px;
 }
 
 .slider-switch-wrapper label {
@@ -1081,7 +1116,13 @@ opacity: 1.0;
 /*отступы в таблице популярных товаров*/
 .slider table {
   margin-left: -80px;
-  border-spacing: 80px 5px;
+  border-spacing: 60px 5px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.detailed-show span {
+  padding-left: 10px;
 }
 
 /*Кнопка Подробнее*/
@@ -1104,6 +1145,7 @@ opacity: 1.0;
   vertical-align: top;
   background: 0;
   border: none;
+  margin-top: 40px;
 }
 
 .detailed::after {
@@ -1619,10 +1661,14 @@ services-list li:first-child {
 .pagination-list li{
  padding: 0;
  margin: 0;
+ padding-left: 30px;
 }
 
 .pagination-list a {
   color: #000000;
+  margin-right: 30px;
+  /*display: block;
+  padding: 2px 2px;  для удобства пользования, можно обернуть в блок*/
 }
 
 .pagination-backward:hover,
@@ -1637,6 +1683,8 @@ services-list li:first-child {
   opacity: 0.3;
 }
 
+
+
 /*не забыть про карту в попапе*/
 .map-big {
   display: none;
@@ -1645,145 +1693,6 @@ services-list li:first-child {
 .logout {
   margin-left: -20px;
   opacity: 0.3;
-}
-
-/*попап подробнее О нас*/
-.modal {
-  color: #000000;
-
-  background-color: #ffffff;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.modal .modal-mail {
-  width: 960px;
-  height: 553px;
-  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-}
-
-.nickname-mail label  {
-  letter-spacing: 0.14px;/*значение по макету,в зеплине нет данных*/
-}
-
-.nickname-mail input {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.14px;
-  color: rgba(70, 70, 70, 0.4);
-
-  padding: 19px 20px;
-  margin-bottom: 20px;
-
-  width: 360px;
-  height: 50px;
-  background-color: rgb(242, 242, 242);
-  border: none;
-}
-
-.nickname-mail input:hover {
-  color: rgba(70, 70, 70, 0.4);
-  background-color: rgb(234, 234, 234);
-}
-
-.nickname-mail input:focus,
-.nickname-mail input:active {
-  color: rgba(70, 70, 70, 1.0);
-  border: solid 3px rgb(240, 197, 46, 0.5);
-  background-color: rgb(255, 255, 255);
-}
-
-/*розовый фон при невалидном вводе данных*/
-/*.nickname-mail input:required:invalid {
-background-color: rgb(246, 218, 218);
-}
-
-.nickname-mail input:required:invalid {
-color: #464646;
-opacity: 0.4;
-}*/
-
-.text-mail label  {
-  letter-spacing: 0.14px;/*значение по макету,в зеплине нет данных*/
-}
-
-.text-mail textarea {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 18px;
-  letter-spacing: 0.14px;
-  color: rgba(70, 70, 70, 0.4);
-
-  padding: 19px 20px;
-  margin-bottom: 20px;
-
-  width: 760px;
-  height: 156px;
-
-  background-color: rgb(242, 242, 242);
-  border: none;
-}
-
-.text-mail textarea:hover {
-  color: rgba(70, 70, 70, 0.4);
-  background-color: rgb(234, 234, 234);
-}
-
-.text-mail textarea:focus,
-.text-mail textarea:active {
-  color: rgba(70, 70, 70, 1.0);
-  border: solid 3px rgb(240, 197, 46, 0.5);
-  background-color: rgb(255, 255, 255);
-}
-
-.button-mail {
-  margin-bottom: 24px;
-  padding: 11px 43px 10px 44px;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  min-width: 160px;
-  max-width: 100%;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  letter-spacing: 3.6px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 1.0);
-  opacity: 1;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: top;
-  background: 0;
-  border: none;
-}
-
-.button-mail::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0%;
-  z-index: -1;
-  width: 100%;
-  height: 8px;
-  background-color: #f0c52e;
-  transition: .3s linear;
-}
-
-.button-mail:hover::after,
-.button-mail:focus::after {
-  height: 100%;
-}
-
-.button-mail:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
@@ -1827,7 +1736,6 @@ fill: #f0c52e;
 }
 
 .user-navigation-footer {
-  width: 325px;
   /*margin: 60px 0 0 0;*/
   align-items: center;
   display: flex;
@@ -1905,6 +1813,127 @@ fill: #f0c52e;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+/*ползунок в каталоге*/
+.range-filter {
+  width: 240px;
+  margin: 50px auto 40px 10px; /* можно убрать */
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  margin-left: -10px;
+  padding-left: 0px;
+  margin-top: -50px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 45%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background: #000000;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-sizing: content-box;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 103px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 14px;
+  display: inline-block;
+  width: 60%;
+  margin-left: -10px;
+  margin-right: -50px;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 109px;
+/*  padding: 8px 10px;*/
+  text-align: left;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.toggle-price {
+  position: relative;
+  margin-top: 87px;
+}
+
+.toggle-price::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  top: -10px;
+  left: 0;
+  background-color: #000000;
+}
+
+.toggle-price::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  top: 145px;
+  left: 0;
+  background-color: #000000;
+}
+
+.bluetooth {
+  position: relative;
+}
+
+.bluetooth::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  top: -10px;
+  left: 0;
+  background-color: #000000;
+}
+
 
 .login-link-footer,
 .compare-footer,
@@ -2073,4 +2102,231 @@ fill: #FFC600;
   position: absolute;
   top: -55px;;
   right: 0;
+}
+
+/*всплывающая форма*/
+
+.user-data {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.user-data p {
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 12;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-mail {
+  top: 1057px;
+  left: 50%;
+
+  display: none;
+
+  width: 960px;
+  margin-left: -480px;
+  padding: 100px 100px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+  border: none;
+
+  cursor: pointer;
+}
+/*попап подробнее О нас*/
+.modal {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
+.nickname-mail label  {
+  letter-spacing: 0.14px; /*значение по макету,в зеплине нет данных*/
+}
+
+.nickname-mail input {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+
+  padding: 19px 20px;
+  margin-bottom: 39px;
+  margin-top: 19px;
+
+  min-width: 360px;
+
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.nickname-mail input:hover {
+  color: rgba(70, 70, 70, 0.4);
+  background-color: rgb(234, 234, 234);
+}
+
+.nickname-mail input:focus,
+.nickname-mail input:active {
+  color: rgba(70, 70, 70, 1.0);
+  border: solid 3px rgb(240, 197, 46, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+/*розовый фон при невалидном вводе данных*/
+.nickname-mail input:required:invalid {
+background-color: rgb(246, 218, 218);
+border: 2px solid rgb(246, 218, 218);
+}
+
+.nickname-mail input:required:invalid {
+color: #464646;
+opacity: 0.4;
+}
+
+.user-data label,
+.text-mail  {
+  letter-spacing: 0.14px;/*значение по макету,в зеплине нет данных*/
+}
+
+.text-mail textarea {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+
+  padding: 19px 20px;
+  margin-bottom: 20px;
+
+  width: 760px;
+  height: 156px;
+
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.text-mail textarea:hover {
+  color: rgba(70, 70, 70, 0.4);
+  background-color: rgb(234, 234, 234);
+}
+
+.text-mail textarea:focus,
+.text-mail textarea:active {
+  color: rgba(70, 70, 70, 1.0);
+  border: solid 3px rgb(240, 197, 46, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+.button-mail {
+  margin-bottom: 24px;
+  padding: 11px 43px 10px 44px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 160px;
+  max-width: 100%;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 1.0);
+  opacity: 1;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  background: 0;
+  border: none;
+}
+
+.button-mail::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  transition: .3s linear;
+}
+
+.button-mail:hover::after,
+.button-mail:focus::after {
+  height: 100%;
+}
+
+.button-mail:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  display: none;
+
+  width: 960px;
+  height: 559px;
+
+  top: 610px;
+  margin-left: -480px;
+
+  background-image: url("../img/map-big-jpg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }

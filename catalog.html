@@ -115,10 +115,10 @@
             </ul>
             <ul class="sort-item">
               <li>
-                <a class="sort-link sort-link-active" href="#">по возростанию</a>
+                <a class="sort-link-active" href="#"><span class="visually-hidden">по возростанию</span></a>
               </li>
               <li>
-                <a class="sort-link" href="#">по убыванию</a>
+                <a class="sort-link" href="#"><span class="visually-hidden">по убыванию</span></a>
               </li>
             </ul>
           </div>
@@ -129,7 +129,7 @@
           <div class="category-left">
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
-                <legend>Стоимость</legend>
+                <legend class="toggle-price">Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -171,7 +171,7 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend>Bluetooth</legend>
+                <legend class="bluetooth">Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio-checked" type="radio" name="bluetooth-module" value="presence" id="yes" checked>
@@ -185,7 +185,7 @@
               </fieldset>
               <button type="submit" class="show-filter">Показать</button>
             </form>
-          </section>
+    <!--      </section>-->
         </div>
         <div class="category-right category-white">
           <div class="catalog-cards">
@@ -211,7 +211,7 @@
                 </p>
                 <div class="denomination">
                   <a href="catalog-item.html">
-                    <h3>Профессиональная селфи палка</h3>
+                    <h3>Профессиональная<br> селфи палка</h3>
                   </a>
                   <span class="cost">1500 руб.</span>
                 </div>
@@ -260,11 +260,11 @@
             </li>
             <li class="pagination-item pagination-item-current">
               <a>1</a>
-            </li>
-            <li class="pagination-item">
+      <!--      </li>
+            <li class="pagination-item">-->
               <a href="#">2</a>
-            </li>
-            <li class="pagination-item">
+    <!--        </li>
+            <li class="pagination-item"> -->
               <a href="#">3</a>
             </li>
             <li class="pagination-forward">
@@ -284,14 +284,10 @@
         </svg>
       </a>
       <ul class="user-navigation-footer">
-        <li>
-          <a class="logout-link" href="#">Валентин Петухов</a>
-        </li>
-        <li>
-          <a class="logout" href="/logout">Выйти</a>
-        </li>
-        <li><a href="compare">Сравнить</a></li>
-        <li><a href="cart">Корзина</a></li>
+        <li><a class="login-link-footer" href="login.html">Валентин Петухов</a></li>
+        <li><a class="logout" href="/logout">Выйти</a></li>
+        <li><a class="compare-footer" href="compare.html">Сравнить</a></li>
+        <li><a class="cart-footer" href="cart.html">Корзина</a></li>
       </ul>
     </div>
     <div class="footer-middle">
