@@ -68,7 +68,7 @@ img {
 }
 
 .logotype svg:not(:hover) {
-fill: #000000;
+  fill: #000000;
 }
 
 .logotype svg:hover,
@@ -138,7 +138,7 @@ fill: #000000;
   outline: none;
   color: rgba(255,255,255, 0.3);
   border: solid 2px #000000;
- }
+}
 
 .search-form-input:focus {
   opacity: 1;
@@ -322,9 +322,9 @@ fill: #000000;
 }
 
 .site-navigation:hover {
-/*width: 1160px;
-padding-bottom: 129px;*/
-background-color: rgb(247, 226, 150);
+  /*width: 1160px;
+  padding-bottom: 129px;*/
+  background-color: rgb(247, 226, 150);
 }
 
 .navigation-item {
@@ -562,7 +562,7 @@ background-color: rgb(247, 226, 150);
 /*фильтр каталог*/
 .category li {
   list-style: none;
-/*  margin-left: -40px;*/
+  /*  margin-left: -40px;*/
 }
 
 .category-left {
@@ -603,14 +603,14 @@ background-color: rgb(247, 226, 150);
 }
 
 /*.category ul {
-  margin: 0;
-  padding: 0;
-  font-style: none;
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.1px;
+margin: 0;
+padding: 0;
+font-style: none;
+font-family: "OpenSans", Arial, sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0.1px;
 }*/
 
 .sort-item li {
@@ -794,16 +794,18 @@ background-color: rgb(247, 226, 150);
 
 .sort-link:focus,
 .sort-link:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .sort-link:active {
-opacity: 1.0;
+  opacity: 1.0;
 }
 
-.sort-link-active {
+
+
+/*.sort-link-active {
 opacity: 1.0;
-}
+}*/
 
 .catalog-list {
   display: flex;
@@ -883,14 +885,14 @@ opacity: 1.0;
   margin-top: 36px;
 }
 
-.denomination h3 {
+.item-discript {
   margin: 0;
 
   letter-spacing: 0.18px;
 }
 
 /*.cost {
-  margin: 0;
+margin: 0;
 }*/
 
 .catalog-item {
@@ -902,7 +904,7 @@ opacity: 1.0;
 
 /*.denomination:nth-child(3),
 .denomination:nth-child(4) {
-  margin-bottom: 40px;
+margin-bottom: 40px;
 }*/
 
 .catalog-list img:hover,
@@ -912,12 +914,12 @@ opacity: 1.0;
 }
 
 .button-to-compare {
-font-family: "OpenSans", Arial, sans-serif;
-font-size: 13px;
-font-weight: 300;
-line-height: 36px;
-letter-spacing: 0.13px;
-color: rgba(0, 0, 0, 0.5);
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .button-to-compare:hover,
@@ -995,7 +997,7 @@ color: rgba(0, 0, 0, 0.5);
 }
 
 /*.button-to-compare {
-  margin-left: 14px;
+margin-left: 14px;
 }*/
 
 .user-sale {
@@ -1007,8 +1009,8 @@ color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
- .catalog-item:hover .user-sale,
- .catalog-item:focus .user-sale {
+.catalog-item:hover .user-sale,
+.catalog-item:focus .user-sale {
   z-index: 1;
 }
 
@@ -1019,9 +1021,9 @@ color: rgba(0, 0, 0, 0.5);
 }
 
 /*.catalog-list a {
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000000;
+letter-spacing: 0.2px;
+text-align: left;
+color: #000000;
 }*/
 
 .catalog-list span {
@@ -1059,8 +1061,14 @@ color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
+.detailed-show td {
+  padding: 0;
+}
+
 
 /*слайдер селфи палка браслет квадрокоптер*/
+
+
 .slider {
   /*width: 1129px;*/
   position: relative;
@@ -1309,7 +1317,7 @@ color: rgba(0, 0, 0, 0.5);
 }
 
 .popular-5 {
-margin: 32px 49px 30px 55px;
+  margin: 32px 49px 30px 55px;
 }
 
 .popular-6 {
@@ -1455,18 +1463,18 @@ services-list li:first-child {
 }
 
 /*.chapter-guarantee p {
-  width: 436px;
-  height: auto;
+width: 436px;
+height: auto;
 }
 
 .obligation-description p {
-  width: 425px;
-  height: auto;
+width: 425px;
+height: auto;
 }*/
 
 /*Бренды*/
 .brand {
-/*  width: 1160px;*/
+  /*  width: 1160px;*/
   margin-top: -34px;
   margin-bottom: 154px;
   /*margin: 94px 0px 151px 80px;
@@ -1596,14 +1604,14 @@ services-list li:first-child {
 }
 
 /*.block-profile::after {
-  content: "";
-  position:
-  top: 40%;
-  left: 40%;
-  z-index: 1;
-  width: 80px;
-  height: 8px;
-  background-color: #000000;
+content: "";
+position:
+top: 40%;
+left: 40%;
+z-index: 1;
+width: 80px;
+height: 8px;
+background-color: #000000;
 }*/
 .company ul,
 .company li {
@@ -1684,8 +1692,8 @@ services-list li:first-child {
 }
 
 /*.contact p {
-  width: 511px;
-  height: 46px;
+width: 511px;
+height: 46px;
 }*/
 
 .map-big {
@@ -1705,9 +1713,9 @@ services-list li:first-child {
 }
 
 .pagination-list li{
- padding: 0;
- margin: 0;
- padding-left: 30px;
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
 }
 
 .pagination-list a {
@@ -1783,7 +1791,7 @@ li.pagination-forward {
 }
 
 .logotype-footer svg {
-fill: #f0c52e;
+  fill: #f0c52e;
 }
 
 .logotype-footer svg:hover,
@@ -1961,7 +1969,7 @@ fill: #f0c52e;
   font-weight: 300;
   line-height: 24px;
   width: 109px;
-/*  padding: 8px 10px;*/
+  /*  padding: 8px 10px;*/
   text-align: left;
   color: rgba(0, 0, 0, 0.2);
   border: none;
@@ -2018,7 +2026,7 @@ fill: #f0c52e;
 .login-link-footer svg:not(:hover),
 .compare-footer svg:not(:hover),
 .cart-footer svg:not(:hover), {
-fill: #ffc600;
+  fill: #ffc600;
 }
 
 .login-link-footer svg:hover,
@@ -2101,7 +2109,7 @@ fill: #ffc600;
 /*социальные сети*/
 
 .social-buttons {
- position: relative;
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -2143,7 +2151,7 @@ fill: #ffc600;
 }
 
 .logo-html svg{
-fill: #FFC600;
+  fill: #FFC600;
 }
 
 .logo-html svg:hover,
@@ -2281,13 +2289,13 @@ fill: #FFC600;
 
 /*розовый фон при невалидном вводе данных*/
 .nickname-mail input:required:invalid {
-background-color: rgb(246, 218, 218);
-border: 2px solid rgb(246, 218, 218);
+  background-color: rgb(246, 218, 218);
+  border: 2px solid rgb(246, 218, 218);
 }
 
 .nickname-mail input:required:invalid {
-color: #464646;
-opacity: 0.4;
+  color: #464646;
+  opacity: 0.4;
 }
 
 .user-data label,
@@ -2403,4 +2411,7 @@ opacity: 0.4;
   z-index: 2;
 
   border: none;
+}
+.slide-block {
+  display: none;
 }
