@@ -85,7 +85,9 @@
         </div>
       </nav>
     </header>
+    </div>
     <main>
+      <div class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ol class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -93,7 +95,6 @@
         <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
       </ol>
     </div>
-    <!--    <div class="container-middle"> -->
     <div class="category">
       <div class="category-top">
         <div class="container-filter">
@@ -147,9 +148,9 @@
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
-                <ul>
+                <ul class="filter-type">
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-black" id="color-black" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="color-black" checked>
                     <label for="color-black">Черный</label>
                   </li>
                   <li class="filter-option">
@@ -157,11 +158,11 @@
                     <label for="color-white">Белый</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-blue" id="color-blue" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="color-blue" checked>
                     <label for="color-blue">Синий</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checked" type="checkbox" name="color-red" id="color-red" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="color-red" checked>
                     <label for="color-red">Красный</label>
                   </li>
                   <li class="filter-option">
@@ -172,9 +173,9 @@
               </fieldset>
               <fieldset>
                 <legend class="bluetooth">Bluetooth</legend>
-                <ul>
+                <ul class="filter-type">
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio-checked" type="radio" name="bluetooth-module" value="presence" id="yes" checked>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-module" value="presence" id="yes" checked>
                     <label for="yes">Есть</label>
                   </li>
                   <li class="filter-option">
@@ -185,12 +186,11 @@
               </fieldset>
               <button type="submit" class="show-filter">Показать</button>
             </form>
-    <!--      </section>-->
         </div>
         <div class="category-right category-white">
           <div class="catalog-cards">
             <ul class="catalog-list">
-              <li class="catalog-item new-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-image">
                   <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </p>
@@ -205,7 +205,7 @@
                   <p class="button-to-compare">Добавить к сравнению</p>
                 </div>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-image">
                   <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </p>
@@ -216,11 +216,11 @@
                   <span class="cost">1500 руб.</span>
                 </div>
                 <div class="user-sale">
-                  <p class="to-cart">В КОРЗИНУ</p>
-                  <p class="to-compare">Добавить к сравнению</p>
+                  <p class="button-to-cart">В КОРЗИНУ</p>
+                  <p class="button-to-compare">Добавить к сравнению</p>
                 </div>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-image">
                   <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </p>
@@ -231,16 +231,14 @@
                   <span class="cost">2500 руб.</span>
                 </div>
                 <div class="user-sale">
-                  <p class="to-cart">В КОРЗИНУ</p>
-                  <p class="to-compare">Добавить к сравнению</p>
+                  <p class="button-to-cart">В КОРЗИНУ</p>
+                  <p class="button-to-compare">Добавить к сравнению</p>
                 </div>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-image">
                   <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
-                  <!--    </p>
-                  <p class="img-container new">
-                </p>-->
+                </p>
                 <div class="denomination">
                   <a href="catalog-item.html">
                     <h3>Селфи-палка «Следуй за мной»</h3>
@@ -248,8 +246,8 @@
                   <span class="cost">4900 руб.</span>
                 </div>
                 <div class="user-sale">
-                  <p class="to-cart">В КОРЗИНУ</p>
-                  <p class="to-compare">Добавить к сравнению</p>
+                  <p class="button-to-cart">В КОРЗИНУ</p>
+                  <p class="button-to-compare">Добавить к сравнению</p>
                 </div>
               </li>
             </ul>
@@ -259,13 +257,13 @@
               <a href="#">НАЗАД</a>
             </li>
             <li class="pagination-item pagination-item-current">
-              <a>1</a>
-      <!--      </li>
-            <li class="pagination-item">-->
-              <a href="#">2</a>
-    <!--        </li>
-            <li class="pagination-item"> -->
-              <a href="#">3</a>
+              <a class="pag-link pagination-item-current">1</a>
+          </li>
+            <li class="pagination-item">
+              <a class="pag-link" href="#">2</a>
+           </li>
+            <li class="pagination-item">
+              <a class="pag-link" href="#">3</a>
             </li>
             <li class="pagination-forward">
               <a href="#">ВПЕРЕД</a></li>
@@ -274,7 +272,7 @@
         </div>
       </div>
     </div>
-    <!--</div>-->
+
 </main>
 <footer class="main-footer">
   <div class="container">
