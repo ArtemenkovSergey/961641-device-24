@@ -26,7 +26,7 @@ link.addEventListener("click", function (evt) {
     mail.focus();
   } else {
     name.focus();
-  });
+  }
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -40,7 +40,7 @@ link.addEventListener("click", function (evt) {
     } else {
       if (isStorageSupport) {
         localStorage.setItem("name", name.value);
-      });
+      }
 
       window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
@@ -50,5 +50,3 @@ link.addEventListener("click", function (evt) {
           }
         }
       });
-
-      

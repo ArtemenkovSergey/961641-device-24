@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -113,8 +112,8 @@
               <table class="detailed-show">
                 <tr class="top-description">
                   <td>8,5<span>м</span></td>
-                  <td>5<span>кг</span></td>
-                  <td>Карбон</td>
+                  <td class="breadth">5<span>кг</span></td>
+                  <td class="carbon">Карбон</td>
                 </tr>
                 <tr class="bottom-description">
                   <td>Длина палки</td>
@@ -232,40 +231,44 @@
               <label class="btn" for="services-3">Кредит</label>
             </div>
             <div class="services-list">
-              <ul>
+              <ul class="services-list-text">
                 <li class="obligation-description">Доставка</li>
                 <li class="obligation-item">
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                   </p>
                 </li>
               </ul>
-              <ul>
+              <ul class="services-list-img">
                 <li class="slide-icon">
                   <p><img src="img/delivery.png" class="delivery" width="136" height="164" alt=""></p>
                 </li>
               </ul>
             </div>
             <div class="services-list slide-block">
-              <ul>
+              <ul class="services-list-text">
                 <li class="obligation-description">Гарантия</li>
                 <li class="obligation-item">
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
                     Товар, не дом, конечно же.
                   </p>
                 </li>
+              </ul>
+              <ul class="services-list-img">
                 <li class="slide-icon">
                   <p><img src="img/warranty.png" class="warranty" width="171" height="194" alt=""></p>
                 </li>
               </ul>
             </div>
             <div class="services-list slide-block">
-              <ul>
+              <ul class="services-list-text">
                 <li class="obligation-description">Кредит</li>
                 <li class="obligation-item">
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
                     условия кредита. Выгодные для нашего банка, разумеется.
                   </p>
                 </li>
+              </ul>
+              <ul class="services-list-img">
                 <li class="slide-icon">
                   <p><img src="img/credit.png" class="credit" width="156" height="186" alt=""></p>
                 </li>
@@ -306,7 +309,7 @@
         </section>
         <div class="modal-wrapper">
           <section class="profile">
-            <h2>О нас</h2>
+            <h2 class="about-profile">О нас</h2>
             <div class="block-profile">
               <p>Огромный выбор гаджетов не оставит равнодушным гика,
                 который есть в каждом из нас.
@@ -329,7 +332,7 @@
             <a class="button-about" href="button-about.html">ПОДРОБНЕЕ О НАС</a>
           </section>
           <section class="contact">
-            <h2 id="chapter-contact">Контакты</h2>
+            <h2 class="contact-our" id="chapter-contact">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
               проверить работоспособность покупки. Всякое бывает.
             </p>
@@ -445,16 +448,16 @@
       <form class="mail" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-data">
           <p class="nickname-mail">
-            <label for="name">Ваше имя:</label><br>
+            <label for="name">Ваше имя:</label>
             <input type="text" id="name" name="full-name" class="type-name" placeholder="Имя Фамилия" required>
           </p>
           <p class="nickname-mail">
-            <label for="mail">Ваш e-mail:</label><br>
+            <label for="mail">Ваш e-mail:</label>
             <input type="email" id="mail" name="comment" placeholder="email@example.com" required>
           </p>
         </div>
         <p class="text-mail">
-          <label for="text-mail">Текст письма:</label><br>
+          <label for="text-mail">Текст письма:</label>
           <textarea id="text-mail" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button-mail" type="submit">отправить</button>
@@ -463,7 +466,7 @@
       modal-close
       </button>
     </section>
-    <script src="js/popup.js"></script>
-    <script src="js/map.js"></script>
+<!--    <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>-->
   </body>
 </html>
