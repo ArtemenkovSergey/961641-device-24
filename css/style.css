@@ -879,21 +879,37 @@
  .slider input {
      display: none;
 }
- .slider-switch-wrapper {
-     position: absolute;
-     right: 60px;
-     bottom: 160px;
+.slider-switch-wrapper {
+   position: absolute;
+   right: 82px;
+   bottom: 161px;
 }
- .slider-switch-wrapper label {
-     box-sizing: content-box;
-     display: inline-block;
-     vertical-align: top;
-     width: 4px;
-     height: 4px;
-     border: 3px solid #000000;
-     border-radius: 50%;
-     margin-right: 20px;
-     opacity: 0.3;
+.slider-switch-wrapper label {
+  box-sizing: content-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 13px;
+  position: relative;
+}
+
+.slider-switch-wrapper label:last-child {
+margin: 0;
+}
+
+.active-switch::after {
+content:"";
+position: absolute;
+width: 3px;
+height: 3px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 1px solid #000000;
+border-radius: 50%;
 }
  #slider-switch-1:checked ~ .slider-switch-wrapper label[for="slider-switch-1"]{
      opacity: 1;
