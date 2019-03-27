@@ -67,7 +67,7 @@
      margin: -1px;
 }
  .main-header {
-     margin: 40px 0 0;
+     margin: 43px 0 0;
      padding: 0 60px;
      min-height: 299px;
      background-color: rgba(240, 197, 46, 0.5);
@@ -858,9 +858,7 @@
      border: solid 2px rgb(0, 0, 0);
      border-radius: 50%;
 }
- .detailed-show td {
-     padding: 0;
-}
+
 .detailed-show {
   vertical-align: top;
 }
@@ -929,7 +927,7 @@ border-radius: 50%;
  .slide-description {
      box-sizing: content-box;
      width: 500px;
-     padding: 100px 0 0 0;
+     padding: 95px 0 0 0;
 }
  .slide-description strong {
      margin: 0;
@@ -946,7 +944,7 @@ border-radius: 50%;
      letter-spacing: 0.15px;
      color: #000000;
      margin: 0;
-     margin-top: 15px;
+     margin-top: 18px;
 }
  .slide-description::after {
      content: "";
@@ -987,7 +985,13 @@ border-radius: 50%;
      padding-left: 17px;
 }
 .carbon {
-     padding-left: 10px;
+     padding-left: 14px;
+}
+.weig {
+  padding-left: 15px;
+}
+.material {
+  padding-left: 16px;
 }
 /*Кнопка Подробнее*/
  .detailed {
@@ -1008,7 +1012,7 @@ border-radius: 50%;
      vertical-align: top;
      background: 0;
      border: none;
-     margin-top: 40px;
+     margin-top: 43px;
 }
  .detailed::after {
      content: "";
@@ -1309,6 +1313,7 @@ border-radius: 50%;
      line-height: 48px;
      letter-spacing: 0.47px;
      text-align: left;
+     margin-top: -10px;
 }
  .profile h2::after,
  .contact h2::after {
@@ -1327,7 +1332,11 @@ border-radius: 50%;
  .block-profile ul {
      padding: 0;
      margin: 0;
-     margin-left: 40px;
+     margin-left: 20px;
+     margin-top: 65px;
+}
+.company li {
+  padding-left: 15px;
 }
  .block-profile p,
  .contact p {
@@ -1336,9 +1345,18 @@ border-radius: 50%;
      font-weight: 300;
      line-height: 30px;
      letter-spacing: normal;
-     margin: 0;
-     padding: 0;
      margin-bottom: 40px;
+}
+.proposal-1 {
+    margin-top: -14px;
+    width: 450px;
+}
+.proposal-2 {
+   margin-top: -12px;
+   max-width: 475px;
+}
+.proposal-3 {
+   margin-top: -15px;
 }
  .company ul, .company li {
      margin: 0;
@@ -1348,11 +1366,12 @@ border-radius: 50%;
      font-size: 16px;
      line-height: 40px;
      letter-spacing: 0.2px;
+     padding-left: 16px;
     /*в зеплине он не указан, но к макету так ближе*/
 }
 /*кнопка модалка подробнее о нас*/
  .button-about {
-     margin-top: 80px;
+     margin-top: 55px;
      margin-bottom: 24px;
      padding: 11px 23px 10px 22px;
      cursor: pointer;
@@ -1372,6 +1391,7 @@ border-radius: 50%;
 }
  .button-contact-us {
      margin-bottom: 24px;
+     margin-top: -12px;
      padding: 11px 41px 10px 41px;
      cursor: pointer;
      position: relative;
@@ -1474,19 +1494,21 @@ border-radius: 50%;
      background-color: #464646;
      min-height: 323px;
      overflow-x: hidden;
+     margin-top: 59px;
 }
  .logotype-footer {
      display: inline-block;
      margin: 0;
 }
  .footer-top {
-     padding-top: 60px;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+     margin-top: 50px;
 }
  .logotype-footer svg {
      fill: #f0c52e;
+     margin-top: 15px;
 }
  .logotype-footer svg:hover,
  .logotype-footer svg:focus {
@@ -1719,6 +1741,7 @@ border-radius: 50%;
      justify-content: space-between;
      align-items: flex-end;
      margin-bottom: 70px;
+     margin-top: 25px;
 }
  .footer-navigation {
      display: flex;
@@ -1793,6 +1816,7 @@ border-radius: 50%;
  .footer-bottom ul {
      margin: 0;
      padding: 0;
+     margin-top: -10px;
 }
  .footer-bottom li {
      margin: 0 10px;
