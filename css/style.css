@@ -450,6 +450,7 @@
 }
  .category-top {
      background: linear-gradient(to right, #d9d9d9 10%, #d9d9d9 10%, #d9d9d9 70%, white);
+     margin-bottom: -14px;
 }
  .category-bottom {
      background: linear-gradient(to right, #ebebeb 50%, white 50%, white 100%);
@@ -475,7 +476,7 @@
  .category-left h2 {
      margin: 0;
      vertical-align: middle;
-     margin-top: 30px;
+     margin-top: 21px;
      margin-bottom: 30px;
      margin-right: auto;
      font-size: 16px;
@@ -622,7 +623,7 @@
      letter-spacing: 3.2px;
      color: #000000;
      margin: 0;
-     margin-right: -167px;
+     margin-right: -190px;
 }
  .sort-link {
      font-family: "OpenSans", Arial, sans-serif;
@@ -676,7 +677,7 @@
      height: 20px;
      position: absolute;
      top: 10px;
-     left: -19px;
+     left: -9px;
      background-image: url("../img/icon-up-dir.svg");
      background-repeat: no-repeat;
      background-position: 0 0;
@@ -688,7 +689,7 @@
      height: 20px;
      position: absolute;
      top: 10px;
-     left: -15px;
+     left: -11px;
      background-image: url("../img/icon-down-dir.svg");
      background-repeat: no-repeat;
      background-position: 0 0;
