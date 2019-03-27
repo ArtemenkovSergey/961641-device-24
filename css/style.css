@@ -900,15 +900,15 @@ margin: 0;
 }
 
 .active-switch::after {
-content:"";
-position: absolute;
-width: 3px;
-height: 3px;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-border: 1px solid #000000;
-border-radius: 50%;
+   content:"";
+    position: absolute;
+   width: 3px;
+   height: 3px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    border: 1px solid #000000;
+   border-radius: 50%;
 }
  #slider-switch-1:checked ~ .slider-switch-wrapper label[for="slider-switch-1"]{
      opacity: 1;
@@ -975,7 +975,7 @@ border-radius: 50%;
      align-items: flex-start;*/
 }
 .detailed-show td:first-child {
-  text-align: right;
+     text-align: right;
 }
 
  .detailed-show span {
@@ -988,10 +988,10 @@ border-radius: 50%;
      padding-left: 14px;
 }
 .weiga {
-  padding-left: 15px;
+     padding-left: 15px;
 }
 .material {
-  padding-left: 16px;
+     padding-left: 16px;
 }
 /*Кнопка Подробнее*/
  .detailed {
